@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    padding: 12px;
+    margin: 0;
+    background-color: #176b55;
+    color: white;
+}
+
+#viewDiv {
+    width: 100%;
+    height: 600px;
+}

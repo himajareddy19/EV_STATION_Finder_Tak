@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EV Station Finder</title>
+
+    <!-- ArcGIS CSS -->
+    <link rel="stylesheet"
+          href="https://js.arcgis.com/4.34/esri/themes/light/main.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ArcGIS JavaScript SDK -->
+    <script src="https://js.arcgis.com/4.34/"></script>
+
+    <!-- Our JavaScript -->
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <h1>EV Station Finder</h1>
+    <label for="connectorFilter">Connector Type:</label>
+<select id="connectorFilter">
+    <option value="all">All Connectors</option>
+</select>
+
+<label for="minPowerFilter">Minimum Power (kW):</label>
+<select id="minPowerFilter">
+    <option value="0">All Power Levels</option>
+    <option value="15">15 kW and above</option>
+    <option value="30">30 kW and above</option>
+    <option value="50">50 kW and above</option>
+</select>
+
+<label>
+    <input type="checkbox" id="clusterToggle">
+    Enable Station Clustering
+</label>
+
+    <!-- Map container -->
+    <div id="viewDiv"></div>
+
+</body>
+</html>
